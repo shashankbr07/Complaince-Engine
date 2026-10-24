@@ -1,0 +1,16 @@
+{
+  "evaluation_criteria_id": "CRIT_COMP_BEST_EXEC_01",
+  "criteria_metadata": {
+    "domain": "Investor Protection & Best Execution",
+    "risk_level": "Critical"
+  },
+  "expected_criteria_statement": "The internal policy must explicitly enforce that client orders are routed to venues offering the best net price, lowest transaction costs, and fastest execution speed. It is strictly prohibited to prioritize internal routing networks or affiliate brokers if doing so conflicts with obtaining the absolute best economic outcome for the client.",
+  "aligned_sources": {
+    "external_regulatory_section_ids": [
+      "MIFID_SEC_24_3"
+    ],
+    "internal_policy_section_ids": [
+      "INT_SEC_4_1"
+    ]
+  }
+}

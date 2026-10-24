@@ -1,0 +1,17 @@
+{
+  "document_id": "REG-MIFIDII-CH24",
+  "document_type": "EXTERNAL_REGULATION",
+  "title": "Markets in Financial Instruments Directive II - Article 24",
+  "pages": [
+    {
+      "page_number": 14,
+      "sections": [
+        {
+          "section_id": "MIFID_SEC_24_3",
+          "heading": "Best Execution Mandate to Clients",
+          "raw_text": "Investment firms must take all sufficient steps to obtain, when executing orders, the best possible result for their clients taking into account price, costs, speed, likelihood of execution and settlement, size, nature or any other consideration relevant to the execution of the order. Firms shall not structure routing configurations to favor internal execution venues over external markets if it results in higher systemic costs to the client."
+        }
+      ]
+    }
+  ]
+}

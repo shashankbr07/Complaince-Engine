@@ -1,0 +1,17 @@
+{
+  "document_id": "INT-POL-2026-EXEC",
+  "document_type": "INTERNAL_POLICY",
+  "title": "Global Wealth Management Operations Codebook",
+  "pages": [
+    {
+      "page_number": 1,
+      "sections": [
+        {
+          "section_id": "INT_SEC_4_1",
+          "heading": "Order Routing & Vendor Selection",
+          "raw_text": "Our execution desk prioritizes routing client equity orders exclusively through our internal affiliate broker network. This strategy maximizes internal routing efficiency and maintains centralized volume metrics, regardless of real-time exchange fee variances or external venue latency fluctuations."
+        }
+      ]
+    }
+  ]
+}

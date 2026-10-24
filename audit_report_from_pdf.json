@@ -1,0 +1,21 @@
+{
+  "total_criteria_evaluated": 1,
+  "passed_count": 0,
+  "failed_count": 1,
+  "evaluations": [
+    {
+      "evaluation_criteria_id": "CRIT_COMP_BEST_EXEC_01",
+      "alignment_check": {
+        "internal_section_evaluated": "INT_SEC_4_1",
+        "external_section_evaluated": "MIFID_SEC_24_3",
+        "status": "FAIL",
+        "rationale": "Direct Conflict: Internal policy INT_SEC_4_1 mandates routing client orders 'exclusively through our internal affiliate broker network' regardless of exchange fee variances or venue latency. This directly breaches External Regulation MIFID_SEC_24_3, which mandates that 'Firms shall not structure routing configurations to favor internal execution venues over external markets if it results in higher systemic costs to the client', and violates Expected Criteria CRIT_COMP_BEST_EXEC_01."
+      },
+      "detailed_gap_analysis": {
+        "regulatory_requirement": "External section MIFID_SEC_24_3 mandates that investment firms take all sufficient steps to achieve best execution (price, costs, speed) and explicitly forbids favoring internal venues over external markets.",
+        "internal_policy_behavior": "Internal section INT_SEC_4_1 establishes a strict routing priority favoring internal affiliate brokers to optimize firm-internal metrics, explicitly disregarding market cost variances and execution latency."
+      },
+      "suggested_remediation": "Replace the raw text of INT_SEC_4_1 with: 'Our execution desk must take all sufficient steps to obtain the best possible execution result for client orders by evaluating total consideration, including net price, transaction costs, execution speed, and likelihood of settlement across all available venues. Orders shall be dynamically routed to the venue offering the best overall economic outcome for the client. The firm strictly prohibits prioritizing internal affiliate broker networks where doing so results in higher fees, increased latency, or any adverse execution outcome for the client.'"
+    }
+  ]
+}
