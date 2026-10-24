@@ -1,0 +1,21 @@
+# Environment variables and secrets
+.env
+.env.local
+*.env
+
+# Python virtual environment
+complaince agent/
+venv/
+.venv/
+env/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS specific
+.DS_Store
+
+# Streamlit logs
+.streamlit/
