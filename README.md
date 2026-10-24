@@ -13,6 +13,38 @@ The system ingests both **multi-page PDF documents** and **relational JSON datas
 
 ---
 
+## 📖 Project Description
+
+### 🎯 The Challenge
+In modern financial institutions, legal departments, and regulated enterprises (fintech, asset management, banking, healthcare), compliance officers must continually verify that internal operating procedures conform to evolving external regulatory frameworks like **MiFID II, SEC mandates, FINRA rules, and Basel III**.
+
+Historically, this audit process has been:
+- **Painfully Manual & Slow**: Compliance teams manually cross-reference hundreds of pages across internal policy manuals and regulatory statute books.
+- **Vulnerable to Human Blindspots**: Subtle omissions, ambiguous phrasing, or conflicting desk routing practices easily escape manual spot-checks.
+- **Costly & High-Risk**: Unidentified non-compliance can trigger severe regulatory enforcement, fines, and reputational damage.
+
+### 💡 The Solution
+The **Compliance & Audit Alignment Engine** automates this verification lifecycle end-to-end. It takes unstructured internal policies and external regulations, parses them page-by-page into granular section-level entities, and performs automated, evidence-backed comparative analyses against target compliance criteria.
+
+By leveraging **structured LLM inference (Google Gemini / OpenAI)** enforced by strict **Pydantic schemas**, the engine eliminates subjective ambiguity—producing reproducible **PASS** or **FAIL** verdicts, detailed gap explanations, and verbatim remediation text ready for policy adoption.
+
+### 🧩 The Three Relational Pillars
+The engine evaluates compliance through a tri-relational mapping:
+
+| Input Pillar | Source Format | Role & Purpose | Example |
+| :--- | :--- | :--- | :--- |
+| **1. Internal Policy** | PDF or JSON | The organization's internal codebook or desk guidelines, mapped page-by-page to specific section IDs and headings. | `INT_SEC_4_1` (*Order Routing & Vendor Selection*) |
+| **2. External Regulation** | PDF or JSON | Official legal mandates and statutory articles defining mandatory standards and strict prohibitions. | `MIFID_SEC_24_3` (*MiFID II Best Execution Mandate*) |
+| **3. Evaluation Criteria** | PDF or JSON | The target compliance standard that bridges the internal policy to the external regulation and specifies the expected rule. | `CRIT_COMP_BEST_EXEC_01` (*Best Execution Rule*) |
+
+### 🔍 How It Works
+1. **Multi-Source Ingestion**: Ingests PDFs (via PyMuPDF & PyPDF) or relational JSON, indexing raw text page-by-page.
+2. **$O(1)$ Section Indexing**: Builds in-memory lookup tables mapping each `section_id` to its exact text, heading, and page number.
+3. **Rigorous LLM Evaluation**: Evaluates whether the internal policy satisfies both the external mandate and expected criteria statement without loopholes.
+4. **Audit Flagging**: Flags alignment clearly as **PASS** (Fully Compliant) or **FAIL** (Contains Gaps / Direct Conflict).
+5. **Automated Remediation**: If flagged as **FAIL**, synthesizes the exact revised text required to bring the policy into 100% compliance.
+
+
 ## 🌟 Key Features
 
 - **📑 Multi-Format Ingestion Engine**:
